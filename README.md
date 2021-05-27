@@ -12,3 +12,4 @@
 ## Module 2
 - Conditional rendering
 - Loading data asynchrounously
+- Using the created lifecycle hook
