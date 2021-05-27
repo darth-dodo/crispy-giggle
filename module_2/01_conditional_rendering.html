@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div id="app">
+    <div class="container">
+
+        <!-- show the form if not "submitted" -->
+        <form v-show="!submitted" class="mt-5">
+            <div class="form-group">
+                <label for="email">Email</label>
+
+                <!-- one way binding is via v-bind or shorthand : -->
+                <input type="email" class="form-control form-control-lg" v-model="email">
+            </div>
+
+            <!-- v-on and @ is the short hand -->
+            <!-- at click prevent the default behaviour which is refresh-->
+            <button type="submit" @click.prevent="process" class="btn btn-primary">Submit</button> 
+        </form>
+
+
+        <!-- show this if form iss submitted -->
+        <!-- in case form is not submitted, this is cloaked -->
+        <h2 v-show="submitted" v-cloak class="mt-5">Thanks for signing up!</h2>
+    </div>
+
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<script>
+
+    // vm = view model
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            email: "demo@web.com",
+            submitted: false
+        },
+        methods: {
+            process: function() {
+                this.submitted = true;
+            }
+        }
+    });
+</script>
