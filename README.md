@@ -13,3 +13,4 @@
 - Conditional rendering
 - Loading data asynchrounously
 - Using the created lifecycle hook
+- Using Vue Devtools to understand data objects better and building a list of asteroids API call
