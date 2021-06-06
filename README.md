@@ -18,3 +18,10 @@
 - Additional `v-for` parameters
 - Combining `v-for` with event handling
 - Using computed properties
+
+## Module 3
+- Adding dynamic style attributes
+- Adding dynamic class attributes
+- Using CSS transitions
+- Applying transition to lists
+- Using CSS animations
