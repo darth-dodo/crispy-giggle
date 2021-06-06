@@ -16,3 +16,5 @@
 - Using Vue Devtools to understand data objects better and building a list of asteroids API call
 - Rendering lists with `v-for`
 - Additional `v-for` parameters
+- Combining `v-for` with event handling
+- Using computed properties
