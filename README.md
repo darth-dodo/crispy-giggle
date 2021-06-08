@@ -25,3 +25,16 @@
 - Using CSS transitions
 - Applying transition to lists
 - Using CSS animations
+
+
+## Module 4
+- Using Vue components
+- Registering and using components
+- Adding component props
+- Managing component content with slots
+- Componentizing existing in dom templates
+- Handling events in components
+- Installing vue cli
+- Vue cli project template
+- Moving to single file components
+- Building for production
